@@ -2,9 +2,9 @@
 ## Requires package: pyserial
 
 import serial
-from time import sleep
+# from time import sleep                           # uncomment if sleep is required to change sampling
 
-serial = serial.Serial("COM18",115200,timeout = 1) # Open serial port at required baude rate
+serial = serial.Serial("COM_PORT_NAME", 115200, timeout = 1) # Open serial port at required baude rate
 f = open("output.txt","w")                         # open txt file to write
 print(serial)                                      # show serial port info on terminal
 #time.sleep(5)                                     # wait 5 sec (changes sampling frequency)
